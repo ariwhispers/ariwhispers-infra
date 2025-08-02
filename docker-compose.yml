@@ -1,0 +1,14 @@
+services:
+  llm-pod:
+    build:
+      context: ./llm-pod
+    ports:
+      - "11434:11434"
+    restart: unless-stopped
+
+  image-pod:
+    build:
+      context: ./image-pod
+    ports:
+      - "8188:8188"
+    restart: unless-stopped
