@@ -2,3 +2,4 @@ image-pod/.env
 llm-pod/.env
 image-pod/.env
 llm-pod/.env
+.env
